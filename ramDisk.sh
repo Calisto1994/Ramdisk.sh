@@ -17,7 +17,7 @@ done &
 
 sudo mkdir /mnt/ramdisk # create mountpoint
 sudo chmod 777 /mnt/ramdisk # make sure every user may access it
-sudo mount -t tmpfs -o size=$rDsize none /mnt/ramdisk # mount the ramdisk, 20GByte virtual device
+sudo mount -t tmpfs -o size=$rDsize none /mnt/ramdisk # mount the ramdisk virtual device with as much storage as requested (2GByte if nothing else is specified)
 echo ""; echo "";
 df -h /mnt/ramdisk
 echo ""; echo "";
