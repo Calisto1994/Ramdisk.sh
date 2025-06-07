@@ -9,7 +9,7 @@ fi
 echo "RamDisk size will be" $rDsize
 
 sudo -v # get admin privs
-while true; do
+while true; do		# keep sudo privileges alive (for unmounting/removing the RAMdisk later)
 	sleep 60
 	sudo -n true
 	kill -0 "$$" 2>/dev/null || exit
